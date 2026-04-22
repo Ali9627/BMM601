@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الوسائط البصرية - الصور والفيديو | نظم الوسائط المتعددة</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/animations.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/photos/logo.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo-nav-container">
+          <div class="logo">
+            <img
+              src="../assets/photos/Multimedia Systems.svg"
+              alt="شعار مقرر نظم الوسائط المتعددة"
+              width="120"
+              height="60"
+            />
+            <span class="logo-text">نظم الوسائط المتعددة</span>
+          </div>
+
+          <button class="nav-toggle" aria-label="فتح القائمة">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="../index.html" class="nav-link">الرئيسية</a></li>
+              <li class="dropdown">
+                <a href="topics.html" class="nav-link">المواضيع</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="./visual-media.html"
+                      >الوسائط البصرية - الصور والفيديو</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./compression-techniques.html">تقنيات الضغط</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="../ai-gallery.html" class="nav-link"
+                  >معرض الذكاء الاصطناعي</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">الوسائط البصرية - الصور والفيديو</h1>
+          <p class="hero-description">
+            استكشف عالم الوسائط المتعددة من خلال تجربة تعليمية تفاعلية تجمع بين
+            النظرية والتطبيق
+          </p>
+          <div class="hero-buttons">
+            <a href="#start" class="btn btn-primary">ابدأ التعلم</a>
+            <a href="#video" class="btn btn-secondary">شاهد الفيديوهات</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <picture>
+            <img
+              src="../assets/photos/الوسائط البصرية.png"
+              alt="رسم توضيحي للوسائط البصرية"
+              class="hero-image"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Video Section -->
+    <section id="video" class="video-hero-section">
+      <div class="container">
+        <div class="video-hero-content">
+          <div class="video-header">
+            <h2 class="vedio-section-title">الفيديو التعليمي الرئيسي</h2>
+            <p class="section-subtitle">
+              مقدمة شاملة للوسائط البصرية الرقمية وتقنياتها
+            </p>
+          </div>
+
+          <div class="video-player-container">
+            <!-- Video Player on Top -->
+            <div class="video-top-section">
+              <div class="video-wrapper">
+                <video
+                  controls
+                  poster="../assets//photos/الوسائط البصرية.jpg"
+                  class="main-video"
+                  id="mainVideo"
+                >
+                  <source
+                    src="../assets/videos/visual-media.mp4"
+                    type="video/mp4"
+                  />
+                  <track
+                    src="../videos/subtitles/visual-media.vtt"
+                    kind="subtitles"
+                    srclang="ar"
+                    label="العربية"
+                    default
+                  />
+                  <p>
+                    متصفحك لا يدعم تشغيل الفيديو. يرجى تحديث المتصفح أو
+                    <a href="../videos/visual-media.mp4">تحميل الفيديو</a>.
+                  </p>
+                </video>
+
+                <!-- Custom Controls Overlay -->
+                <div class="custom-controls-overlay">
+                  <svg
+                    version="1.1"
+                    id="play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    height="100px"
+                    width="100px"
+                    viewBox="0 0 100 100"
+                    enable-background="new 0 0 100 100"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="stroke-solid"
+                      fill="none"
+                      stroke="white"
+                      d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5"
+                    />
+                    <path
+                      class="stroke-dotted"
+                      fill="none"
+                      stroke="white"
+                      d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+    C97.3,23.7,75.7,2.3,49.9,2.5"
+                    />
+                    <path
+                      class="icon"
+                      fill="white"
+                      d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Panels Section -->
+            <div class="video-bottom-panels">
+              <!-- Progress Panel -->
+              <div class="panel progress-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">التقدم في المشاهدة</h3>
+                  <span class="progress-percent" id="progressPercent">0%</span>
+                </div>
+                <div class="panel-content">
+                  <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar">
+                      <div class="progress-fill" id="progressFill"></div>
+                      <div class="progress-thumb" id="progressThumb"></div>
+                    </div>
+                  </div>
+                  <div class="bookmarks-container">
+                    <button class="bookmark-btn" id="addBookmarkBtn">
+                      <span>🔖</span>
+                      إضافة علامة
+                    </button>
+                    <div class="bookmarks-list" id="bookmarksList"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Info Panel -->
+              <div class="panel info-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">معلومات الفيديو</h3>
+                </div>
+                <div class="panel-content">
+                  <div class="video-meta-header">
+                    <h4 class="video-title">
+                      مقدمة في الوسائط البصرية الرقمية
+                    </h4>
+                    <div class="video-badges">
+                      <span class="badge primary">تعليمي</span>
+                      <span class="badge secondary">وسائط متعددة</span>
+                    </div>
+                  </div>
+
+                  <p class="video-description">
+                    فيديو تعريفي شامل يشرح أساسيات الصور والفيديو الرقمي، تقنيات
+                    المعالجة، وأنظمة التمثيل الرقمي. يشمل أمثلة عملية ومقارنات
+                    مرئية.
+                  </p>
+
+                  <div class="video-metadata">
+                    <div class="meta-item">
+                      <span class="meta-icon">⏱️</span>
+                      <div class="meta-content">
+                        <span class="meta-label">المدة</span>
+                        <span class="meta-value">35 دقيقة</span>
+                      </div>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="meta-icon">📺</span>
+                      <div class="meta-content">
+                        <span class="meta-label">الجودة</span>
+                        <span class="meta-value">720p FHD</span>
+                      </div>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="meta-icon">🎵</span>
+                      <div class="meta-content">
+                        <span class="meta-label">الصوت</span>
+                        <span class="meta-value">عربي - ستريو</span>
+                      </div>
+                    </div>
+
+                    <div class="meta-item">
+                      <span class="meta-icon">📊</span>
+                      <div class="meta-content">
+                        <span class="meta-label">الحجم</span>
+                        <span class="meta-value">130 ميجابايت</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="video-actions">
+                    <button class="action-btn download-btn">
+                      <span>📥</span>
+                      تحميل الفيديو
+                    </button>
+                    <button class="action-btn transcript-btn">
+                      <span>📄</span>
+                      النص المكتوب
+                    </button>
+                    <button class="action-btn share-btn">
+                      <span>↗️</span>
+                      مشاركة
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Chapters Panel -->
+              <div class="panel chapters-panel">
+                <div class="panel-header">
+                  <h3 class="panel-title">فصول الفيديو</h3>
+                </div>
+                <div class="panel-content">
+                  <div class="chapters-list">
+                    <button class="chapter-item" data-time="0">
+                      <span class="chapter-time">00:00</span>
+                      <span class="chapter-title">المقدمة والتعريف</span>
+                    </button>
+                    <button class="chapter-item" data-seconds="110">
+                      <span class="chapter-time">01:50</span>
+                      <span class="chapter-title"
+                        >تعريف الوسائط البصرية الرقمية</span
+                      >
+                    </button>
+                    <button class="chapter-item" data-seconds="244">
+                      <span class="chapter-time">04:00</span>
+                      <span class="chapter-title">أنواع الوسائط الرقمية</span>
+                    </button>
+                    <button class="chapter-item" data-seconds="300">
+                      <span class="chapter-time">5:00</span>
+                      <span class="chapter-title">الصور الرقمية</span>
+                    </button>
+                    <button class="chapter-item" data-seconds="530">
+                      <span class="chapter-time">8:50</span>
+                      <span class="chapter-title">نماذج الالوان في الصور</span>
+                    </button>
+                    <button class="chapter-item" data-seconds="700">
+                      <span class="chapter-time">11:040</span>
+                      <span class="chapter-title"
+                        >الصور في الكمرات الرقمية</span
+                      >
+                    </button>
+                    <button class="chapter-item" data-seconds="915">
+                      <span class="chapter-time">15:15</span>
+                      <span class="chapter-title">الفيديو الرقمي</span>
+                    </button>
+                    <button class="chapter-item" data-seconds="1077">
+                      <span class="chapter-time">17:57</span>
+                      <span class="chapter-title"
+                        >الإشارات التماثلية والرقمية</span
+                      >
+                    </button>
+                    <button class="chapter-item" data-seconds="1425">
+                      <span class="chapter-time">23:45</span>
+                      <span class="chapter-title"
+                        >دقة الفيديو ومعدل الإطارات</span
+                      >
+                    </button>
+                    <button class="chapter-item" data-seconds="1590">
+                      <span class="chapter-time">26:30</span>
+                      <span class="chapter-title">تقنيات المعالجة</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section Structure -->
+    <section id="start" class="content-section">
+      <div class="container">
+        <!-- الفكرة 1: الوسائط البصرية الرقمية -->
+        <div class="concept-block">
+          <h2 class="concept-title">🌐 الوسائط البصرية الرقمية</h2>
+
+          <div class="content-grid">
+            <!-- النقطة 1 -->
+            <div class="content-item">
+              <div class="text-content">
+                <h3>تعريف الوسائط الرقمية وخصائصها</h3>
+                <p class="paragraph">
+                  الوسائط الرقمية هي كل شكل من أشكال المحتوى الذي يتم إنتاجه،
+                  تخزينه، معالجته، أو نقله باستخدام تقنيات رقمية تعتمد على
+                  الحواسيب والأنظمة الإلكترونية. وهي تشمل مجموعة واسعة من
+                  العناصر مثل النصوص، الصور، الصوتيات، الفيديوهات، الرسوم
+                  المتحركة، والتطبيقات التفاعلية.
+                </p>
+                <p class="paragraph">
+                  تتميز الوسائط الرقمية بالعديد من الخصائص منها: التفاعلية،
+                  القابلية للتخصيص، الانتشار السريع، والدمج المتعدد بين عدة
+                  أنواع من الوسائط مثل الصوت والصورة والنص في تجربة واحدة.
+                </p>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/الوسائط الرقمية المختلفة.png"
+                  alt="أنواع الوسائط الرقمية المختلفة"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/digital-media.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>تعريف الوسائط الرقمية (3 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 2 -->
+            <div class="content-item reverse">
+              <div class="text-content">
+                <h3>أنواع الوسائط الرقمية</h3>
+                <p class="paragraph">تشمل الوسائط الرقمية عدة أنواع رئيسية:</p>
+                <ul class="feature-list">
+                  <li>
+                    <strong>الصور الرقمية:</strong> مثل JPEG, PNG - تستخدم في
+                    التصميم والتوثيق
+                  </li>
+                  <li>
+                    <strong>الفيديو الرقمي:</strong> مثل MP4, MOV - يستخدم في
+                    التعليم، الإعلام، والترفيه
+                  </li>
+                  <li>
+                    <strong>النصوص الرقمية:</strong> مثل المقالات، الكتب
+                    الإلكترونية، والمحتوى التفاعلي
+                  </li>
+                  <li>
+                    <strong>الصوتيات:</strong> مثل MP3, WAV - تستخدم في
+                    البودكاست والموسيقى
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="media-content">
+              <img
+                src="../assets/photos/3.jpeg"
+                alt="أنواع الوسائط الرقمية"
+                class="concept-image"
+              />
+              <div class="audio-player">
+                <audio controls>
+                  <source
+                    src="../assets/audio/media-types.mp3"
+                    type="audio/mpeg"
+                  />
+                </audio>
+                <span>أنواع الوسائط الرقمية (4 دقائق)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- الفكرة 2: الصور الرقمية -->
+        <div class="concept-block">
+          <h2 class="concept-title">📷 الصور الرقمية</h2>
+
+          <div class="content-grid">
+            <!-- النقطة 1 -->
+            <div class="content-item">
+              <div class="text-content">
+                <h3>تعريف الصور الرقمية وخصائصها</h3>
+                <p class="paragraph">
+                  الصورة الرقمية هي تمثيل بصري يتم تخزينه ومعالجته باستخدام
+                  بيانات رقمية، تُعرض عادةً على شاشات إلكترونية. يتم تكوين
+                  الصورة الرقمية من شبكة من العناصر الصغيرة تُسمى "بكسلات"، وكل
+                  بكسل يحمل معلومات لونية تُحدد مظهر الصورة.
+                </p>
+                <p class="paragraph">من أهم خصائص الصور الرقمية:</p>
+                <ul class="feature-list">
+                  <li>
+                    <strong>الدقة (Resolution):</strong> تُقاس بعدد البكسلات في
+                    العرض والارتفاع
+                  </li>
+                  <li>
+                    <strong>العمق اللوني (Color Depth):</strong> يحدد عدد
+                    الألوان الممكنة في الصورة
+                  </li>
+                  <li>
+                    <strong>التحليل الآلي:</strong> يمكن تحليل الصور رقميًا
+                    باستخدام تقنيات الذكاء الاصطناعي
+                  </li>
+                  <li>
+                    <strong>النسخ والمشاركة:</strong> يمكن نسخها ومشاركتها دون
+                    فقدان الجودة
+                  </li>
+                </ul>
+              </div>
+              <div class="media-content">
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/digital-images.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>خصائص الصور الرقمية (4 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 2 -->
+            <div class="content-item reverse">
+              <div class="text-content">
+                <h3>أنواع الصور الرقمية</h3>
+                <p class="paragraph">تنقسم الصور الرقمية إلى نوعين رئيسيين:</p>
+                <div class="type-comparison">
+                  <div class="type-item">
+                    <h4>الصور النقطية (Raster)</h4>
+                    <ul>
+                      <li>تتكون من شبكة من البكسلات</li>
+                      <li>كل بكسل يحمل لونًا معينًا</li>
+                      <li>كلما زاد عدد البكسلات، زادت دقة الصورة</li>
+                      <li><strong>أمثلة:</strong> JPEG, PNG, GIF, BMP</li>
+                    </ul>
+                  </div>
+                  <div class="type-item">
+                    <h4>الصور المتجهية (Vector)</h4>
+                    <ul>
+                      <li>تعتمد على معادلات رياضية</li>
+                      <li>لا تتأثر جودتها عند التكبير أو التصغير</li>
+                      <li>مثالية للشعارات والرسوم التوضيحية</li>
+                      <li><strong>أمثلة:</strong> SVG, AI, EPS</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/انواع الصور الرقمية 2.jpg"
+                  alt="أنواع الصور الرقمية"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/image-types.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>أنواع الصور الرقمية (5 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 3 -->
+            <div class="content-item">
+              <div class="text-content">
+                <h3>نماذج الألوان في الصور الرقمية</h3>
+                <p class="paragraph">
+                  نماذج الألوان هي أنظمة رياضية تُستخدم لتمثيل الألوان داخل
+                  الصور الرقمية بطريقة يمكن للحاسوب فهمها ومعالجتها. كل نموذج
+                  يحدد كيفية مزج أو فصل الألوان الأساسية لإنتاج مجموعة واسعة من
+                  الألوان.
+                </p>
+                <div class="color-models">
+                  <div class="model-item">
+                    <h4>نموذج RGB</h4>
+                    <p>
+                      يعتمد على مزج الألوان الأساسية: الأحمر، الأخضر، والأزرق.
+                      يُستخدم في الشاشات الإلكترونية.
+                    </p>
+                  </div>
+                  <div class="model-item">
+                    <h4>نموذج CMYK</h4>
+                    <p>
+                      يُستخدم في الطباعة، ويعتمد على الألوان الفرعية: السماوي،
+                      الأرجواني، الأصفر، والأسود.
+                    </p>
+                  </div>
+                  <div class="model-item">
+                    <h4>نموذج YUV</h4>
+                    <p>
+                      يُقسم الصورة إلى مكونين: Y للسطوع وU/V للون. يُستخدم في
+                      معالجة الفيديو والضغط.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/نماذج الالوان YUV و CMYK وRGB.jpg"
+                  alt="نماذج الألوان RGB, CMYK, YUV"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/color-models.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>نماذج الألوان (4 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 4 -->
+            <div class="content-item reverse">
+              <div class="text-content">
+                <h3>تشكيل الصور في الكاميرات الرقمية</h3>
+                <p class="paragraph">
+                  تشكيل الصورة الرقمية في الكاميرا هو عملية معقدة تبدأ من
+                  استقبال الضوء وتنتهي بإنتاج ملف صورة يمكن عرضه أو تعديله:
+                </p>
+                <ol class="formation-steps">
+                  <li>
+                    <strong>استقبال الضوء عبر العدسة:</strong> تجميع الأشعة
+                    الضوئية وتركيزها على المستشعر
+                  </li>
+                  <li>
+                    <strong>تحويل الضوء إلى إشارات كهربائية:</strong> باستخدام
+                    مستشعر CCD أو CMOS
+                  </li>
+                  <li>
+                    <strong>تحويل الإشارات التناظرية إلى رقمية:</strong> عبر
+                    محول ADC
+                  </li>
+                  <li>
+                    <strong>تطبيق نموذج الألوان:</strong> استخدام مرشح لوني مثل
+                    Bayer Filter
+                  </li>
+                  <li>
+                    <strong>المعالجة الداخلية:</strong> توازن اللون الأبيض،
+                    تقليل الضوضاء، تحسين الحدة
+                  </li>
+                  <li><strong>التخزين:</strong> في تنسيقات مثل JPEG أو RAW</li>
+                </ol>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/تشكيل الصور وفي الكاميرات الرقمية.jpeg"
+                  alt="تشكيل الصور في الكاميرات الرقمية"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/camera-formation.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>تشكيل الصور في الكاميرات (5 دقائق)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- الفكرة 3: الفيديو الرقمي -->
+        <div class="concept-block">
+          <h2 class="concept-title">🎥 الفيديو الرقمي</h2>
+
+          <div class="content-grid">
+            <!-- النقطة 1 -->
+            <div class="content-item">
+              <div class="text-content">
+                <h3>تعريف الفيديو الرقمي وخصائصه</h3>
+                <p class="paragraph">
+                  الفيديو الرقمي هو تمثيل لحركة الصور المرئية باستخدام بيانات
+                  رقمية مشفّرة، تُخزن وتُعالج بواسطة الحواسيب أو الأجهزة
+                  الإلكترونية. على عكس الفيديو التماثلي الذي يعتمد على إشارات
+                  كهربائية مستمرة، يُستخدم في الفيديو الرقمي ترميز رقمي يُحوّل
+                  كل إطار إلى بيانات قابلة للتحليل والمعالجة.
+                </p>
+                <p class="paragraph">من أهم خصائص الفيديو الرقمي:</p>
+                <ul class="feature-list">
+                  <li>
+                    التمثيل الرقمي (بتات 0 و1) مما يتيح دقة عالية في المعالجة
+                  </li>
+                  <li>سهولة التحرير باستخدام برامج متخصصة</li>
+                  <li>إمكانية الضغط لتقليل الحجم دون فقدان كبير للجودة</li>
+                  <li>الانتقال السريع عبر الإنترنت أو وسائط التخزين</li>
+                  <li>التكامل مع الوسائط الأخرى مثل النصوص والصور</li>
+                </ul>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/خصائص الفيديو الرقمي --.jpg"
+                  alt="خصائص الفيديو الرقمي"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/digital-video.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>خصائص الفيديو الرقمي (4 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 2 -->
+            <div class="content-item reverse">
+              <div class="text-content">
+                <h3>الإشارات التماثلية والرقمية للفيديو</h3>
+                <div class="signal-comparison">
+                  <div class="signal-type">
+                    <h4>الإشارة التماثلية</h4>
+                    <ul>
+                      <li>إشارة كهربائية مستمرة تتغير قيمتها بشكل متصل</li>
+                      <li>
+                        <strong>المزايا:</strong> بسيطة من حيث البنية، لا تحتاج
+                        معالجة رقمية معقدة
+                      </li>
+                      <li>
+                        <strong>العيوب:</strong> تتدهور الجودة مع النسخ، عرضة
+                        للتشويش
+                      </li>
+                      <li><strong>أنظمة:</strong> NTSC, PAL, SECAM</li>
+                    </ul>
+                  </div>
+                  <div class="signal-type">
+                    <h4>الإشارة الرقمية</h4>
+                    <ul>
+                      <li>تمثيل للمعلومات باستخدام رموز ثنائية (0 و1)</li>
+                      <li>
+                        <strong>المزايا:</strong> جودة ثابتة، إمكانية الضغط،
+                        سهولة التحرير
+                      </li>
+                      <li>
+                        <strong>العيوب:</strong> تحتاج أجهزة رقمية، تتطلب سعة
+                        تخزين أكبر
+                      </li>
+                      <li><strong>أنظمة:</strong> DV, HDV, AVCHD</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/مقارنة بين الفيديو الرقمي والتماثلي.png"
+                  alt="مقارنة بين الفيديو التماثلي والرقمي"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/analog-digital.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>المقارنة بين التماثلي والرقمي (5 دقائق)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- النقطة 3 -->
+            <div class="content-item">
+              <div class="text-content">
+                <h3>دقة الفيديو ومعدل الإطارات</h3>
+                <p class="paragraph">
+                  تتحدد جودة الفيديو الرقمي بعاملين رئيسيين:
+                </p>
+                <div class="video-quality">
+                  <div class="quality-factor">
+                    <h4>دقة الفيديو (Resolution)</h4>
+                    <p>
+                      تُشير إلى عدد البكسلات التي تُكوّن كل إطار من الفيديو.
+                      كلما زاد عدد البكسلات، زادت التفاصيل والوضوح.
+                    </p>
+                    <ul>
+                      <li><strong>SD:</strong> 720×576 بكسل</li>
+                      <li><strong>HD:</strong> 1280×720 بكسل</li>
+                      <li><strong>Full HD:</strong> 1920×1080 بكسل</li>
+                      <li><strong>4K:</strong> 3840×2160 بكسل</li>
+                      <li><strong>8K:</strong> 7680×4320 بكسل</li>
+                    </ul>
+                  </div>
+                  <div class="quality-factor">
+                    <h4>معدل الإطارات (Frame Rate)</h4>
+                    <p>
+                      يُشير إلى عدد الصور التي تُعرض في الثانية الواحدة (fps).
+                      كلما زاد المعدل، زادت سلاسة الحركة.
+                    </p>
+                    <ul>
+                      <li><strong>24 fps:</strong> للأفلام السينمائية</li>
+                      <li>
+                        <strong>25/30 fps:</strong> للبث التلفزيوني القياسي
+                      </li>
+                      <li>
+                        <strong>50/60 fps:</strong> للفيديو عالي الجودة والألعاب
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="media-content">
+                <img
+                  src="../assets/photos/دقة الفيديو ومعدل الاطارات.webp"
+                  alt="دقة الفيديو ومعدل الإطارات"
+                  class="concept-image"
+                />
+                <div class="audio-player">
+                  <audio controls>
+                    <source
+                      src="../assets/audio/video-quality.mp3"
+                      type="audio/mpeg"
+                    />
+                  </audio>
+                  <span>دقة ومعدل الإطارات (4 دقائق)</span>
+                </div>
+              </div>
+            </div>
+            <!-- الفكرة 4: تقنيات المعالجة في الوسائط الرقمية -->
+            <div class="concept-block">
+              <h2 class="concept-title">
+                ⚙️ تقنيات المعالجة في الوسائط الرقمية
+              </h2>
+
+              <div class="content-grid">
+                <!-- النقطة 1 -->
+                <div class="content-item">
+                  <div class="text-content">
+                    <h3>مقدمة في تقنيات المعالجة الرقمية</h3>
+                    <p class="paragraph">
+                      تهدف تقنيات المعالجة في الوسائط الرقمية إلى تحسين جودة
+                      الصور والفيديوهات، استخراج المعلومات منها، أو تهيئتها
+                      للاستخدام في تطبيقات مختلفة مثل الذكاء الاصطناعي، التصميم،
+                      أو الطباعة. تُعد هذه التقنيات حجر الأساس في تطوير المحتوى
+                      الرقمي الحديث.
+                    </p>
+                    <div class="processing-features">
+                      <div class="feature-item">
+                        <h4>الخصائص الأساسية</h4>
+                        <ul class="feature-list">
+                          <li>
+                            <strong>التمثيل الرقمي:</strong> تحويل الإشارات
+                            التماثلية إلى بيانات رقمية قابلة للمعالجة
+                          </li>
+                          <li>
+                            <strong>الدقة والتحكم:</strong> تسمح بتعديل دقيق لكل
+                            بكسل أو إطار
+                          </li>
+                          <li>
+                            <strong>القابلية للتخزين والنقل:</strong> يمكن ضغط
+                            الوسائط لتقليل الحجم دون فقد كبير في الجودة
+                          </li>
+                          <li>
+                            <strong>التكامل مع الذكاء الاصطناعي:</strong>
+                            تُستخدم في التعرف على الصور وتحسين الجودة
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <img
+                      src="../assets/photos/معالجة الصور الرقمية.png"
+                      alt="تقنيات المعالجة الرقمية"
+                      class="concept-image"
+                    />
+                    <div class="audio-player">
+                      <audio controls>
+                        <source
+                          src="../assets/audio/processing-techniques.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <span>تقنيات المعالجة الرقمية (4 دقائق)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- الفكرة 5: المرشحات المكانية في معالجة الصور -->
+            <div class="concept-block">
+              <h2 class="concept-title">
+                🎯 المرشحات المكانية في معالجة الصور
+              </h2>
+
+              <div class="content-grid">
+                <!-- النقطة 1 -->
+                <div class="content-item reverse">
+                  <div class="text-content">
+                    <h3>تعريف المرشحات المكانية</h3>
+                    <p class="paragraph">
+                      المرشحات المكانية هي أدوات رياضية تُطبّق مباشرة على الصورة
+                      في شكلها الأصلي، أي على مصفوفة البكسلات التي تمثل الصورة
+                      كما نراها. الهدف منها هو تعديل خصائص الصورة مثل الحدة،
+                      التباين، أو إزالة الضوضاء.
+                    </p>
+                    <div class="filter-mechanism">
+                      <h4>آلية العمل</h4>
+                      <ol class="formation-steps">
+                        <li>
+                          كل بكسل في الصورة يتم فحصه مع مجموعة من البكسلات
+                          المحيطة به تُسمى "النافذة" أو Kernel
+                        </li>
+                        <li>
+                          يتم تطبيق عملية رياضية (مثل المتوسط أو الفرق) على هذه
+                          المجموعة
+                        </li>
+                        <li>
+                          إنتاج قيمة جديدة للبكسل المركزي بناءً على العمليات
+                          الحسابية
+                        </li>
+                        <li>
+                          تكرار هذه العملية على كامل الصورة للحصول على التأثير
+                          المطلوب
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <div class="audio-player">
+                      <audio controls>
+                        <source
+                          src="../assets/audio/spatial-filters.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <span>المرشحات المكانية (5 دقائق)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- النقطة 2 -->
+                <div class="content-item">
+                  <div class="text-content">
+                    <h3>أنواع المرشحات المكانية</h3>
+                    <div class="filter-types">
+                      <div class="type-item">
+                        <h4>مرشحات التمويه (Blur Filters)</h4>
+                        <ul>
+                          <li>تستخدم لتقليل الضوضاء وتحسين المظهر</li>
+                          <li>تعمل على تخفيف الحواف الحادة</li>
+                          <li>مثالية لتحضير الصور للعرض</li>
+                        </ul>
+                      </div>
+                      <div class="type-item">
+                        <h4>مرشحات تعزيز الحواف (Edge Enhancement)</h4>
+                        <ul>
+                          <li>تزيد من وضوح التفاصيل والحواف</li>
+                          <li>تحسن من إدراك العمق في الصورة</li>
+                          <li>مفيدة في التطبيقات الطبية والعلمية</li>
+                        </ul>
+                      </div>
+                      <div class="type-item">
+                        <h4>مرشحات الكشف عن الحواف (Edge Detection)</h4>
+                        <ul>
+                          <li>تستخدم لتحديد حدود الأشياء في الصورة</li>
+                          <li>أساسية في تطبيقات الرؤية الحاسوبية</li>
+                          <li>تساعد في التعرف على الأنماط</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="filter-applications">
+                      <h4>استخدامات المرشحات المكانية</h4>
+                      <ul class="feature-list">
+                        <li>تحسين جودة الصور قبل الطباعة أو العرض</li>
+                        <li>
+                          تجهيز الصور لتحليلها في تطبيقات الذكاء الاصطناعي
+                        </li>
+                        <li>إزالة التشويش الناتج عن الإضاءة أو الحركة</li>
+                        <li>تسهيل التعرف على العناصر مثل النصوص أو الوجوه</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <img
+                      src="../assets/photos/filter-applications.png"
+                      alt="تطبيقات المرشحات المكانية"
+                      class="concept-image"
+                    />
+                    <div class="audio-player">
+                      <audio controls>
+                        <source
+                          src="../assets/audio/filter-applications.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <span>تطبيقات المرشحات (4 دقائق)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- الفكرة 6: المرشحات الترددية وتحويل فورييه -->
+            <div class="concept-block">
+              <h2 class="concept-title">📊 المرشحات الترددية وتحويل فورييه</h2>
+
+              <div class="content-grid">
+                <!-- النقطة 1 -->
+                <div class="content-item">
+                  <div class="text-content">
+                    <h3>تحويل فورييه والمرشحات الترددية</h3>
+                    <p class="paragraph">
+                      المرشحات الترددية تعتمد على تحويل الصورة من المجال المكاني
+                      إلى المجال الترددي باستخدام تحويل فورييه، مما يسمح بمعالجة
+                      الترددات المختلفة بشكل منفصل.
+                    </p>
+
+                    <div class="fourier-explanation">
+                      <h4>تحويل فورييه</h4>
+                      <p>
+                        هو عملية رياضية تُحوّل الصورة من تمثيلها المكاني
+                        (البكسلات) إلى تمثيل ترددي، حيث تُعبّر كل نقطة عن تردد
+                        معين في الصورة:
+                      </p>
+                      <ul class="feature-list">
+                        <li>
+                          <strong>الترددات المنخفضة:</strong> تمثل المناطق
+                          المسطحة أو المتجانسة (مثل الخلفيات)
+                        </li>
+                        <li>
+                          <strong>الترددات العالية:</strong> تمثل التفاصيل
+                          الدقيقة والحواف
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="frequency-processing">
+                      <h4>أنواع المعالجة الترددية</h4>
+                      <div class="processing-types">
+                        <div class="type-item">
+                          <h5>المرشحات المنخفضة التمرير</h5>
+                          <p>
+                            تحافظ على الترددات المنخفضة وتزيل العالية - لإزالة
+                            الضوضاء
+                          </p>
+                        </div>
+                        <div class="type-item">
+                          <h5>المرشحات العالية التمرير</h5>
+                          <p>
+                            تحافظ على الترددات العالية وتزيل المنخفضة - لتعزيز
+                            الحواف
+                          </p>
+                        </div>
+                        <div class="type-item">
+                          <h5>المرشحات النطاقية</h5>
+                          <p>تركز على نطاق ترددي محدد - للتحليل الطيفي</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <img
+                      src="../assets/photos/fourier-transform.jpg"
+                      alt="تحويل فورييه والمرشحات الترددية"
+                      class="concept-image"
+                    />
+                    <div class="audio-player">
+                      <audio controls>
+                        <source
+                          src="../assets/audio/fourier-transform.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <span>المرشحات الترددية (6 دقائق)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- النقطة 2 -->
+                <div class="content-item reverse">
+                  <div class="text-content">
+                    <h3>التطبيقات العملية والفرق بين المجالين</h3>
+
+                    <div class="practical-applications">
+                      <h4>تطبيقات عملية</h4>
+                      <ul class="feature-list">
+                        <li>
+                          <strong>تحسين الصور الطبية:</strong> مثل صور الأشعة،
+                          لإبراز التفاصيل الدقيقة
+                        </li>
+                        <li>
+                          <strong>إزالة الضوضاء:</strong> عن طريق كبح الترددات
+                          غير المرغوبة
+                        </li>
+                        <li>
+                          <strong>تحليل الصور الصناعية:</strong> مثل صور الأقمار
+                          الصناعية أو الفحص البصري
+                        </li>
+                        <li>
+                          <strong>ضغط الصور:</strong> عن طريق إزالة الترددات غير
+                          المرئية للعين البشرية
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="domain-comparison">
+                      <h4>الفرق بين المجال المكاني والترددي</h4>
+                      <div class="comparison-table">
+                        <div class="comparison-item">
+                          <h5>المجال المكاني</h5>
+                          <ul>
+                            <li>يعمل مباشرة على البكسلات</li>
+                            <li>أسرع في التطبيق</li>
+                            <li>مناسب للتعديلات المحلية</li>
+                            <li>أقل تعقيداً في الفهم</li>
+                          </ul>
+                        </div>
+                        <div class="comparison-item">
+                          <h5>المجال الترددي</h5>
+                          <ul>
+                            <li>يعمل على ترددات الصورة</li>
+                            <li>أكثر دقة في التحليل</li>
+                            <li>مناسب للمعالجة الشاملة</li>
+                            <li>يتطلب تحويلات رياضية</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media-content">
+                      <div class="audio-player">
+                        <audio controls>
+                          <source
+                            src="../assets/audio/frequency-applications.mp3"
+                            type="audio/mpeg"
+                          />
+                        </audio>
+                        <span>التطبيقات العملية (5 دقائق)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- الفكرة 7: تقنيات تحجيم الصور وتحسين الجودة -->
+            <div class="concept-block">
+              <h2 class="concept-title">🖼️ تقنيات تحجيم الصور وتحسين الجودة</h2>
+
+              <div class="content-grid">
+                <!-- النقطة 1 -->
+                <div class="content-item">
+                  <div class="text-content">
+                    <h3>تحجيم الصور وتحسين الجودة</h3>
+                    <p class="paragraph">
+                      تحجيم الصور وتحسين الجودة هما من أهم مراحل المعالجة
+                      الرقمية، ويُستخدمان لتحسين تجربة العرض، تقليل حجم الملفات،
+                      أو تجهيز الصور لأغراض الطباعة، العرض على الشاشات، أو
+                      التحليل الآلي.
+                    </p>
+
+                    <div class="scaling-techniques">
+                      <h4>تحجيم الصور</h4>
+                      <p>
+                        يعني تغيير أبعاد الصورة الأصلية، إما بالتكبير لعرضها
+                        بحجم أكبر، أو بالتصغير لتقليل حجمها أو ضغطها.
+                      </p>
+
+                      <div class="scaling-methods">
+                        <div class="method-item">
+                          <h5>طرق التحجيم</h5>
+                          <ul>
+                            <li>
+                              <strong>أخذ العينات (Sampling):</strong> يُستخدم
+                              في التصغير، إما بشكل بسيط أو متقدم
+                            </li>
+                            <li>
+                              <strong>الاستيفاء (Interpolation):</strong>
+                              يُستخدم في التكبير لإنشاء بكسلات جديدة
+                            </li>
+                            <li>
+                              <strong>التكيفي (Adaptive):</strong> يحافظ على
+                              التفاصيل المهمة في الصورة
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="quality-enhancement">
+                      <h4>تحسين الجودة</h4>
+                      <p>
+                        يشمل تعديل خصائص الصورة لتبدو أكثر وضوحًا، توازنًا،
+                        وجاذبية، سواء للعرض البشري أو التحليل الآلي.
+                      </p>
+                      <ul class="feature-list">
+                        <li>تحسين الصور القديمة أو منخفضة الجودة</li>
+                        <li>
+                          تجهيز الصور للطباعة أو العرض على شاشات عالية الدقة
+                        </li>
+                        <li>تحسين صور المنتجات في المتاجر الإلكترونية</li>
+                        <li>
+                          دعم تطبيقات الذكاء الاصطناعي في التعرف على الصور أو
+                          النصوص
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="media-content">
+                    <img
+                      src="../assets/photos/image-scaling.png"
+                      alt="تقنيات تحجيم الصور"
+                      class="concept-image"
+                    />
+                    <div class="audio-player">
+                      <audio controls>
+                        <source
+                          src="../assets/audio/image-scaling.mp3"
+                          type="audio/mpeg"
+                        />
+                      </audio>
+                      <span>تحجيم الصور (5 دقائق)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- النقطة 2 -->
+                <div class="content-item reverse">
+                  <div class="text-content">
+                    <h3>خوارزميات التحجيم والتحسين</h3>
+
+                    <div class="algorithms-comparison">
+                      <div class="algorithm-item">
+                        <h4>خوارزميات التحجيم</h4>
+                        <div class="algorithm-details">
+                          <div class="detail-item">
+                            <h5>
+                              الاستيفاء البيلياني (Bilinear Interpolation)
+                            </h5>
+                            <p>
+                              يحسب متوسط القيم بين البكسلات المجاورة - سريع ولكن
+                              أقل دقة
+                            </p>
+                          </div>
+                          <div class="detail-item">
+                            <h5>الاستيفاء التكعيبي (Bicubic Interpolation)</h5>
+                            <p>
+                              يعطي نتائج أكثر نعومة ودقة، خاصة في التكبير -
+                              الأكثر استخداماً
+                            </p>
+                          </div>
+                          <div class="detail-item">
+                            <h5>لانكوز (Lanczos)</h5>
+                            <p>
+                              أكثر تطوراً، يحافظ على الحدة والتفاصيل - مثالي
+                              للصور الفوتوغرافية
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="algorithm-item">
+                        <h4>تقنيات التحسين</h4>
+                        <div class="enhancement-techniques">
+                          <div class="technique-item">
+                            <h5>تحسين التباين والسطوع</h5>
+                            <p>ضبط مستويات الألوان لتحسين الرؤية</p>
+                          </div>
+                          <div class="technique-item">
+                            <h5>تقليل الضوضاء</h5>
+                            <p>إزالة التشويش مع الحفاظ على التفاصيل</p>
+                          </div>
+                          <div class="technique-item">
+                            <h5>زيادة الحدة</h5>
+                            <p>تعزيز الحواف والتفاصيل الدقيقة</p>
+                          </div>
+                          <div class="technique-item">
+                            <h5>تصحيح الألوان</h5>
+                            <p>ضبط توازن الألوان لتبدو طبيعية</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="media-content">
+                      <div class="audio-player">
+                        <audio controls>
+                          <source
+                            src="../assets/audio/quality-algorithms.mp3"
+                            type="audio/mpeg"
+                          />
+                        </audio>
+                        <span>خوارزميات التحسين (4 دقائق)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="../assets/photos/Multimedia Systems Vertical logo.svg"
+                alt="شعار الموقع"
+                width="80"
+                height="40"
+              />
+              <span>نظم الوسائط المتعددة</span>
+            </div>
+            <p>
+              موقع تعليمي تفاعلي لمقرر نظم الوسائط المتعددة - الجامعة الافتراضية
+              السورية
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html">الرئيسية</a></li>
+              <li><a href="./compression-techniques.html">المواضيع</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>معلومات الاتصال</h4>
+            <address>
+              الجامعة الافتراضية السورية<br />
+              دمشق، سوريا<br />
+              <a href="mailto:info@svuonline.org">info@svuonline.org</a>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 مقرر نظم الوسائط المتعددة - الجامعة الافتراضية السورية.
+            جميع الحقوق محفوظة.
+          </p>
+          <div class="footer-badges">
+            <span class="badge">مدعوم بالذكاء الاصطناعي</span>
+            <span class="badge">تصميم متجاوب</span>
+            <span class="badge">وسائط متعددة غنية</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/video-player.js"></script>
+  </body>
+</html>

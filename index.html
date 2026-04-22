@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="موقع تعليمي تفاعلي لمقرر نظم الوسائط المتعددة - الجامعة الافتراضية السورية"
+    />
+    <meta name="keywords" content="وسائط متعددة, تعليم, جامعة, سورية, تفاعلي" />
+    <title>نظم الوسائط المتعددة - الجامعة الافتراضية السورية</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles/style.css" as="style" />
+    <link rel="preload" href="images/logo.webp" as="image" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/photos/logo.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo-nav-container">
+          <div class="logo">
+            <img
+              src="assets/photos/Multimedia Systems.svg"
+              alt="شعار مقرر نظم الوسائط المتعددة"
+              width="120"
+              height="60"
+            />
+            <span class="logo-text">نظم الوسائط المتعددة</span>
+          </div>
+
+          <button class="nav-toggle" aria-label="فتح القائمة">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+              <li class="dropdown">
+                <a class="nav-link">المواضيع</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="topics/visual-media.html"
+                      >الوسائط البصرية - الصور والفيديو</a
+                    >
+                  </li>
+                  <li>
+                    <a href="topics/compression-techniques.html"
+                      >تقنيات الضغط</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="ai-gallery.html" class="nav-link"
+                  >معرض الذكاء الاصطناعي</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">مرحباً بكم في مقرر نظم الوسائط المتعددة</h1>
+          <p class="hero-description">
+            استكشف عالم الوسائط المتعددة من خلال تجربة تعليمية تفاعلية تجمع بين
+            النظرية والتطبيق
+          </p>
+          <div class="hero-buttons">
+            <a href="topics/visual-media.html" class="btn btn-primary"
+              >ابدأ التعلم</a
+            >
+            <a href="ai-gallery.html" class="btn btn-secondary"
+              >معرض الذكاء الصناعي</a
+            >
+          </div>
+        </div>
+        <div class="hero-media">
+          <picture>
+            <img
+              src="assets/photos/الوسائط المتعددة-الرئيسية.png"
+              alt="رسم توضيحي للوسائط المتعددة"
+              class="hero-image"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Features Section -->
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title">مميزات الموقع التعليمي</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🎥</div>
+              <h3>فيديوهات تعليمية</h3>
+              <p>مقاطع فيديو مصممة خصيصاً مع شروحات نصية وترجمات</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🖼️</div>
+              <h3>صور ومعالجات رقمية</h3>
+              <p>صور عالية الجودة معالجة بتقنيات حديثة بصيغ AVIF وWEBP</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="assets/photos/Multimedia Systems Vertical logo.svg"
+                alt="شعار الموقع"
+                width="80"
+                height="40"
+              />
+              <span>نظم الوسائط المتعددة</span>
+            </div>
+            <p>
+              موقع تعليمي تفاعلي لمقرر نظم الوسائط المتعددة - الجامعة الافتراضية
+              السورية
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="./topics/visual-media.html">المواضيع</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>معلومات الاتصال</h4>
+            <address>
+              الجامعة الافتراضية السورية<br />
+              دمشق، سوريا<br />
+              <a href="mailto:info@svuonline.org">info@svuonline.org</a>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 مقرر نظم الوسائط المتعددة - الجامعة الافتراضية السورية.
+            جميع الحقوق محفوظة.
+          </p>
+          <div class="footer-badges">
+            <span class="badge">مدعوم بالذكاء الاصطناعي</span>
+            <span class="badge">تصميم متجاوب</span>
+            <span class="badge">وسائط متعددة غنية</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/video-player.js"></script>
+  </body>
+</html>

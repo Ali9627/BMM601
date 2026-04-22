@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معرض الذكاء الاصطناعي | نظم الوسائط المتعددة</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/photos/logo.svg" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo-nav-container">
+          <div class="logo">
+            <img
+              src="assets/photos/Multimedia Systems.svg"
+              alt="شعار مقرر نظم الوسائط المتعددة"
+              width="120"
+              height="60"
+            />
+            <span class="logo-text">نظم الوسائط المتعددة</span>
+          </div>
+
+          <button class="nav-toggle" aria-label="فتح القائمة">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+              <li class="dropdown">
+                <a class="nav-link">المواضيع</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="topics/visual-media.html"
+                      >الوسائط البصرية - الصور والفيديو</a
+                    >
+                  </li>
+                  <li>
+                    <a href="topics/compression-techniques.html"
+                      >تقنيات الضغط</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="ai-gallery.html" class="nav-link active"
+                  >معرض الذكاء الاصطناعي</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">معرض الذكاء الاصطناعي</h1>
+          <p class="hero-description">
+            استكشف إبداعات الذكاء الاصطناعي في مجال الوسائط المتعددة من خلال صور
+            وفيديوهات مولدة بالكامل باستخدام تقنيات AI متقدمة
+          </p>
+          <div class="hero-buttons">
+            <a href="#pictures-section" class="btn btn-primary">استكشف الصور</a>
+            <a href="#videos-section" class="btn btn-secondary"
+              >شاهد الفيديوهات</a
+            >
+          </div>
+        </div>
+        <div class="hero-media">
+          <picture>
+            <img
+              src="assets/photos/معرض الذكاء الاصطناعي للوسائط المتعددة.jpeg"
+              alt="معرض الذكاء الاصطناعي للوسائط المتعددة"
+              class="hero-image"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Introduction Section -->
+      <section class="ai-intro-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="ai-section-title">عن المعرض</h2>
+            <p class="section-subtitle">
+              هذا المعرض يعرض محتوى تم إنشاؤه بالكامل باستخدام أدوات الذكاء
+              الاصطناعي المتقدمة مثل DALL-E 3 و Midjourney و Runway ML
+            </p>
+          </div>
+
+          <div class="ai-stats">
+            <div class="stat-card">
+              <div class="stat-icon">🖼️</div>
+              <div class="stat-number">50+</div>
+              <div class="stat-label">صورة مولدة بالذكاء الاصطناعي</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎥</div>
+              <div class="stat-number">15+</div>
+              <div class="stat-label">فيديو مولّد بالذكاء الاصطناعي</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🤖</div>
+              <div class="stat-number">8</div>
+              <div class="stat-label">أدوات ذكاء اصطناعي مستخدمة</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">⚡</div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">محتوى مبتكر بالذكاء الاصطناعي</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pictures Section -->
+      <section id="pictures-section" class="pictures-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">🖼️ الصور المولدة بالذكاء الاصطناعي</h2>
+            <p class="section-subtitle">
+              مجموعة مختارة من الصور التي تم إنشاؤها باستخدام تقنيات الذكاء
+              الاصطناعي لتوضيح مفاهيم الوسائط المتعددة
+            </p>
+          </div>
+
+          <!-- Pictures Grid -->
+          <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item" data-category="compression">
+              <div class="image-container">
+                <img
+                  src="assets/photos/12.avif"
+                  alt="مخطط توضيحي لضغط البيانات بالذكاء الاصطناعي"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button class="view-btn" data-image="assets/photos/12.avif">
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>مخطط ضغط البيانات</h4>
+                <p>تم إنشاؤه باستخدام DALL-E 3</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "مخطط تقني يوضح عملية ضغط البيانات في
+                    الوسائط المتعددة"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="gallery-item" data-category="multimedia">
+              <div class="image-container">
+                <img
+                  src="assets/photos/هيكل نظام الوسائط المتعددة.jpeg"
+                  alt="هيكل نظام الوسائط المتعددة"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="view-btn"
+                    data-image="assets/photos/هيكل نظام الوسائط المتعددة.jpeg"
+                  >
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>هيكل نظام الوسائط المتعددة</h4>
+                <p>تم إنشاؤه باستخدام Midjourney</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "رسم تخطيطي معاصر لهيكل نظام الوسائط
+                    المتعددة يظهر المكونات الرئيسية"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="gallery-item" data-category="networking">
+              <div class="image-container">
+                <img
+                  src="assets/photos/8.avif"
+                  alt="بروتوكولات شبكات الوسائط المتعددة"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button class="view-btn" data-image="assets/photos/8.avif">
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>بروتوكولات الشبكات</h4>
+                <p>تم إنشاؤه باستخدام Stable Diffusion</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "تصميم يوضح بروتوكولات شبكات الوسائط
+                    المتعددة مع أسهم البيانات"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="gallery-item" data-category="processing">
+              <div class="image-container">
+                <img
+                  src="assets/photos/معالجة الصور الرقمية.jpeg"
+                  alt="معالجة الصور الرقمية"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="view-btn"
+                    data-image="assets/photos/معالجة الصور الرقمية.jpeg"
+                  >
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>معالجة الصور الرقمية</h4>
+                <p>تم إنشاؤه باستخدام DALL-E 3</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "عملية معالجة الصور الرقمية تظهر التحويل من
+                    صورة إلى بيانات رقمية"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="gallery-item" data-category="compression">
+              <div class="image-container">
+                <img
+                  src="assets/photos/ضغط الصور JPEG.jpeg"
+                  alt="ضغط JPEG"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="view-btn"
+                    data-image="assets/photos/ضغط الصور JPEG.jpeg"
+                  >
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>خوارزمية ضغط JPEG</h4>
+                <p>تم إنشاؤه باستخدام Midjourney</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "رسم توضيحي لخوارزمية ضغط JPEG مع عرض تحويل
+                    DCT"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="gallery-item" data-category="multimedia">
+              <div class="image-container">
+                <img
+                  src="assets/photos/الوسائط الرقمية.jpeg"
+                  alt="الوسائط الرقمية"
+                  loading="lazy"
+                />
+                <div class="image-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="view-btn"
+                    data-image="assets/photos/الوسائط الرقمية.jpeg"
+                  >
+                    عرض
+                  </button>
+                </div>
+              </div>
+              <div class="image-info">
+                <h4>تطور الوسائط الرقمية</h4>
+                <p>تم إنشاؤه باستخدام Stable Diffusion</p>
+                <div class="image-meta">
+                  <span class="prompt"
+                    >النص المستخدم: "رسم يوضح تطور الوسائط الرقمية من التماثلي
+                    إلى الرقمي"</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos Section -->
+      <section id="videos-section" class="videos-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">
+              🎥 الفيديوهات المولدة بالذكاء الاصطناعي
+            </h2>
+            <p class="section-subtitle">
+              استكشف فيديوهات تم إنشاؤها بالكامل باستخدام تقنيات الذكاء
+              الاصطناعي المتقدمة
+            </p>
+          </div>
+
+          <!-- Videos Grid -->
+          <div class="videos-grid">
+            <!-- Video 1 -->
+            <div class="video-card" data-category="ai-generated">
+              <div class="video-thumbnail">
+                <video
+                  class="ai-video"
+                  preload="metadata"
+                  poster="assets/videos/poster1.jpg"
+                >
+                  <source
+                    src="assets/videos/VID-20251025-WA0000.mp4"
+                    type="video/mp4"
+                  />
+                  متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <div class="video-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="play-video-btn"
+                    data-video="assets/videos/VID-20251025-WA0000.mp4"
+                  >
+                    <span>▶</span> تشغيل الفيديو
+                  </button>
+                </div>
+                <div class="video-duration">00:8</div>
+              </div>
+              <div class="video-info">
+                <h4>فوائد الوسائط المتعددة</h4>
+                <p>تم إنشاؤه باستخدام Runway ML</p>
+                <div class="video-meta">
+                  <span>مدة الفيديو: 8 ثانية</span>
+                </div>
+                <div class="prompt-info">
+                  <span class="prompt"
+                    >النص المستخدم: "فيديو يوضح الوسائط المتعددة وفوائدها"</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card" data-category="ai-generated">
+              <div class="video-thumbnail">
+                <video
+                  class="ai-video"
+                  preload="metadata"
+                  poster="assets/videos/poster2.jpg"
+                >
+                  <source
+                    src="assets/videos/VID-20251025-WA0001.mp4"
+                    type="video/mp4"
+                  />
+                  متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+                <div class="video-overlay">
+                  <div class="ai-badge">مولّد بالذكاء الاصطناعي</div>
+                  <button
+                    class="play-video-btn"
+                    data-video="assets/videos/VID-20251025-WA0001.mp4"
+                  >
+                    <span>▶</span> تشغيل الفيديو
+                  </button>
+                </div>
+                <div class="video-duration">00:8</div>
+              </div>
+              <div class="video-info">
+                <h4>تعريف الوسائط المتعددة</h4>
+                <p>تم إنشاؤه باستخدام Pika Labs</p>
+                <div class="video-meta">
+                  <span>مدة الفيديو: 8 ثانية</span>
+                </div>
+                <div class="prompt-info">
+                  <span class="prompt"
+                    >النص المستخدم: "فيديو تعليمي يعرف الوسائط المتعددة"</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- AI Tools Section -->
+      <section class="ai-tools-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">🛠️ أدوات الذكاء الاصطناعي المستخدمة</h2>
+            <p class="section-subtitle">
+              تعرف على الأدوات والتقنيات التي استخدمناها لإنشاء محتوى هذا المعرض
+            </p>
+          </div>
+
+          <div class="tools-grid">
+            <div class="tool-card">
+              <div class="tool-icon">🎨</div>
+              <h4>DALL-E 3</h4>
+              <p>
+                لإنشاء الصور التوضيحية عالية الجودة بناءً على أوصاف نصية دقيقة
+              </p>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon">🖼️</div>
+              <h4>Midjourney</h4>
+              <p>
+                لإنشاء صور فنية وإبداعية بمستوى عالٍ من التفاصيل والتأثيرات
+                البصرية
+              </p>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon">⚡</div>
+              <h4>Stable Diffusion</h4>
+              <p>لإنشاء صور تقنية ومخططات توضيحية بدقة عالية وتحكم تفصيلي</p>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon">🎬</div>
+              <h4>Runway ML</h4>
+              <p>
+                لإنشاء وتحرير الفيديوهات باستخدام نماذج الذكاء الاصطناعي
+                المتقدمة
+              </p>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon">🎥</div>
+              <h4>Pika Labs</h4>
+              <p>
+                لتحويل النصوص إلى فيديوهات تعليمية برسوم متحركة وتأثيرات بصرية
+              </p>
+            </div>
+
+            <div class="tool-card">
+              <div class="tool-icon">🤖</div>
+              <h4>ChatGPT</h4>
+              <p>لإنشاء النصوص الوصفية والمحتوى التعليمي المصاحب للوسائط</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <img src="" alt="" id="modalImage" />
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDescription"></p>
+          <div class="modal-meta">
+            <span id="modalTool"></span>
+            <span id="modalPrompt"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+      <div class="modal-content video-modal">
+        <button class="modal-close" id="videoModalClose">&times;</button>
+        <video controls id="modalVideo">
+          <source src="" type="video/mp4" />
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+        <div class="modal-info">
+          <h3 id="videoModalTitle"></h3>
+          <p id="videoModalDescription"></p>
+          <div class="modal-meta">
+            <span id="videoModalTool"></span>
+            <span id="videoModalPrompt"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./assets/photos/Multimedia Systems Vertical logo.svg"
+                alt="شعار الموقع"
+                width="80"
+                height="40"
+              />
+              <span>نظم الوسائط المتعددة</span>
+            </div>
+            <p>
+              موقع تعليمي تفاعلي لمقرر نظم الوسائط المتعددة - الجامعة الافتراضية
+              السورية
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html">الرئيسية</a></li>
+              <li><a href="../topics.html">المواضيع</a></li>
+              <li><a href="../videos.html">الفيديوهات</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>معلومات الاتصال</h4>
+            <address>
+              الجامعة الافتراضية السورية<br />
+              دمشق، سوريا<br />
+              <a href="mailto:info@svuonline.org">info@svuonline.org</a>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 مقرر نظم الوسائط المتعددة - الجامعة الافتراضية السورية.
+            جميع الحقوق محفوظة.
+          </p>
+          <div class="footer-badges">
+            <span class="badge">مدعوم بالذكاء الاصطناعي</span>
+            <span class="badge">تصميم متجاوب</span>
+            <span class="badge">وسائط متعددة غنية</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/video-player.js"></script>
+  </body>
+</html>
